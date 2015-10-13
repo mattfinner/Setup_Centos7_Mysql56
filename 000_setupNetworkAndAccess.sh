@@ -6,6 +6,8 @@ nmtui # confogure interface
 
 # Install nano
 yum install -y nano
+yum install -y ntpd
+systemctl start ntpd
 
 # Disable firewall
 systemctl disable firewalld
