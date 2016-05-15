@@ -3,11 +3,14 @@
 # Setup network
 nmcli d # find ethernet interface id
 nmtui # confogure interface
+# Set a static IP but leave network interface as Automatic
 
 # Install nano
 yum install -y nano
 yum install -y ntpd
 systemctl start ntpd
+yum install net-tools
+yum install -y wget
 
 # Disable firewall
 systemctl disable firewalld
